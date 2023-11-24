@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6332EF6B2B0766DA009833DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EF6A2B0766DA009833DA /* AppDelegate.swift */; };
+		6332EF6D2B0766DA009833DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EF6C2B0766DA009833DA /* SceneDelegate.swift */; };
+		6332EF742B0766DB009833DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6332EF732B0766DB009833DA /* Assets.xcassets */; };
+		6332EF772B0766DB009833DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6332EF752B0766DB009833DA /* LaunchScreen.storyboard */; };
+		6332EF9B2B076C97009833DA /* TableView+register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EF9A2B076C97009833DA /* TableView+register.swift */; };
+		6332EF9D2B076CFC009833DA /* TableView+reusingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EF9C2B076CFC009833DA /* TableView+reusingCell.swift */; };
+		6332EFA02B076D9A009833DA /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EF9E2B076D9A009833DA /* MovieListViewController.swift */; };
+		6332EFA12B076D9A009833DA /* MovieListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6332EF9F2B076D9A009833DA /* MovieListViewController.xib */; };
+		6332EFA32B076FD9009833DA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EFA22B076FD9009833DA /* Movie.swift */; };
+		6332EFA62B07705D009833DA /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EFA42B07705D009833DA /* MovieCell.swift */; };
+		6332EFA72B07705D009833DA /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6332EFA52B07705D009833DA /* MovieCell.xib */; };
+		6332EFAA2B079040009833DA /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EFA82B079040009833DA /* MovieDetailsViewController.swift */; };
+		6332EFAB2B079040009833DA /* MovieDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6332EFA92B079040009833DA /* MovieDetailsViewController.xib */; };
+		6332EFAD2B07991F009833DA /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EFAC2B07991F009833DA /* MainTabBarViewController.swift */; };
+		6332EFB02B079CC2009833DA /* FavoriteMovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EFAE2B079CC2009833DA /* FavoriteMovieListViewController.swift */; };
+		6332EFB12B079CC2009833DA /* FavoriteMovieListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6332EFAF2B079CC2009833DA /* FavoriteMovieListViewController.xib */; };
+		6332EFB42B079D39009833DA /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EFB22B079D39009833DA /* UserProfileViewController.swift */; };
+		6332EFB52B079D39009833DA /* UserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6332EFB32B079D39009833DA /* UserProfileViewController.xib */; };
+		6332EFB92B08F18D009833DA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EFB72B08F18D009833DA /* SignInViewController.swift */; };
+		6332EFBA2B08F18D009833DA /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6332EFB82B08F18D009833DA /* SignInViewController.xib */; };
+		6332EFBD2B090BD4009833DA /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EFBC2B090BD4009833DA /* AuthCoordinator.swift */; };
+		6332EFC02B090DF6009833DA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EFBE2B090DF6009833DA /* SignUpViewController.swift */; };
+		6332EFC12B090DF6009833DA /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6332EFBF2B090DF6009833DA /* SignUpViewController.xib */; };
+		6332EFC32B0930BA009833DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6332EFC22B0930BA009833DA /* GoogleService-Info.plist */; };
+		6332EFC62B09328D009833DA /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6332EFC52B09328D009833DA /* FirebaseAnalyticsSwift */; };
+		6332EFC82B09328D009833DA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6332EFC72B09328D009833DA /* FirebaseAuth */; };
+		6332EFCA2B09328D009833DA /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6332EFC92B09328D009833DA /* FirebaseDatabase */; };
+		6332EFCC2B09328D009833DA /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6332EFCB2B09328D009833DA /* FirebaseDatabaseSwift */; };
+		6332EFCE2B09328D009833DA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6332EFCD2B09328D009833DA /* FirebaseFirestore */; };
+		6332EFD02B09328D009833DA /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 6332EFCF2B09328D009833DA /* FirebaseFirestoreCombine-Community */; };
+		6332EFD22B09328E009833DA /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6332EFD12B09328E009833DA /* FirebaseFirestoreSwift */; };
+		6332EFD42B09328E009833DA /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 6332EFD32B09328E009833DA /* FirebaseStorage */; };
+		6332EFD62B09328E009833DA /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 6332EFD52B09328E009833DA /* FirebaseStorageCombine-Community */; };
+		6332EFD92B0A2B62009833DA /* AppleiTunesSearchURLComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EFD82B0A2B62009833DA /* AppleiTunesSearchURLComponents.swift */; };
+		6332EFDD2B0A3E36009833DA /* ItunesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EFDC2B0A3E36009833DA /* ItunesResult.swift */; };
+		6332EFDF2B0BD3EB009833DA /* MovieCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EFDE2B0BD3EB009833DA /* MovieCoordinator.swift */; };
+		6332EFE12B0BD440009833DA /* FavoriteMoviesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EFE02B0BD440009833DA /* FavoriteMoviesCoordinator.swift */; };
+		6332EFE32B0BD478009833DA /* UserProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EFE22B0BD478009833DA /* UserProfileCoordinator.swift */; };
+		6332EFE52B0BD742009833DA /* FireBaseSignInAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EFE42B0BD742009833DA /* FireBaseSignInAuthenticator.swift */; };
+		6332EFE72B0BD94A009833DA /* FavoriteMoviesFireBaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332EFE62B0BD94A009833DA /* FavoriteMoviesFireBaseStore.swift */; };
+		63B523322B0FE36800A7E359 /* ITunesMovieLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B523312B0FE36800A7E359 /* ITunesMovieLoader.swift */; };
+		63B523342B0FE43D00A7E359 /* MovieMediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B523332B0FE43D00A7E359 /* MovieMediaType.swift */; };
+		63B523362B0FE46500A7E359 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B523352B0FE46500A7E359 /* MediaType.swift */; };
+		63B5233C2B0FEA9E00A7E359 /* FirebaseFavoriteMoviesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5233B2B0FEA9E00A7E359 /* FirebaseFavoriteMoviesLoader.swift */; };
+		63B5233E2B0FF0D500A7E359 /* FirebaseUserAvatarImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5233D2B0FF0D500A7E359 /* FirebaseUserAvatarImageStore.swift */; };
+		63B523402B10D77A00A7E359 /* SignUpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5233F2B10D77A00A7E359 /* SignUpError.swift */; };
+		63B523422B10DA8100A7E359 /* SignInError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B523412B10DA8100A7E359 /* SignInError.swift */; };
+		63F269E22B0E3E5F0092FADD /* MovieImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F269E12B0E3E5F0092FADD /* MovieImageLoader.swift */; };
+		63F269E42B0F4E540092FADD /* UIViewController+init+className.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F269E32B0F4E540092FADD /* UIViewController+init+className.swift */; };
+		63F269E62B0F60BC0092FADD /* TextField+highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F269E52B0F60BC0092FADD /* TextField+highlight.swift */; };
+		63F269E82B0F615D0092FADD /* UIImage+systemName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F269E72B0F615D0092FADD /* UIImage+systemName.swift */; };
+		63F269EA2B0F9F110092FADD /* FireBaseSignUpAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F269E92B0F9F110092FADD /* FireBaseSignUpAuthenticator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6332EF672B0766DA009833DA /* MoviesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6332EF6A2B0766DA009833DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6332EF6C2B0766DA009833DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6332EF732B0766DB009833DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6332EF762B0766DB009833DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6332EF782B0766DB009833DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6332EF9A2B076C97009833DA /* TableView+register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+register.swift"; sourceTree = "<group>"; };
+		6332EF9C2B076CFC009833DA /* TableView+reusingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+reusingCell.swift"; sourceTree = "<group>"; };
+		6332EF9E2B076D9A009833DA /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		6332EF9F2B076D9A009833DA /* MovieListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieListViewController.xib; sourceTree = "<group>"; };
+		6332EFA22B076FD9009833DA /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		6332EFA42B07705D009833DA /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		6332EFA52B07705D009833DA /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		6332EFA82B079040009833DA /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		6332EFA92B079040009833DA /* MovieDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailsViewController.xib; sourceTree = "<group>"; };
+		6332EFAC2B07991F009833DA /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		6332EFAE2B079CC2009833DA /* FavoriteMovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMovieListViewController.swift; sourceTree = "<group>"; };
+		6332EFAF2B079CC2009833DA /* FavoriteMovieListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteMovieListViewController.xib; sourceTree = "<group>"; };
+		6332EFB22B079D39009833DA /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		6332EFB32B079D39009833DA /* UserProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileViewController.xib; sourceTree = "<group>"; };
+		6332EFB72B08F18D009833DA /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		6332EFB82B08F18D009833DA /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		6332EFBC2B090BD4009833DA /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		6332EFBE2B090DF6009833DA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6332EFBF2B090DF6009833DA /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		6332EFC22B0930BA009833DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6332EFD82B0A2B62009833DA /* AppleiTunesSearchURLComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleiTunesSearchURLComponents.swift; sourceTree = "<group>"; };
+		6332EFDC2B0A3E36009833DA /* ItunesResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesResult.swift; sourceTree = "<group>"; };
+		6332EFDE2B0BD3EB009833DA /* MovieCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCoordinator.swift; sourceTree = "<group>"; };
+		6332EFE02B0BD440009833DA /* FavoriteMoviesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMoviesCoordinator.swift; sourceTree = "<group>"; };
+		6332EFE22B0BD478009833DA /* UserProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCoordinator.swift; sourceTree = "<group>"; };
+		6332EFE42B0BD742009833DA /* FireBaseSignInAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseSignInAuthenticator.swift; sourceTree = "<group>"; };
+		6332EFE62B0BD94A009833DA /* FavoriteMoviesFireBaseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMoviesFireBaseStore.swift; sourceTree = "<group>"; };
+		63B523312B0FE36800A7E359 /* ITunesMovieLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesMovieLoader.swift; sourceTree = "<group>"; };
+		63B523332B0FE43D00A7E359 /* MovieMediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMediaType.swift; sourceTree = "<group>"; };
+		63B523352B0FE46500A7E359 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
+		63B5233B2B0FEA9E00A7E359 /* FirebaseFavoriteMoviesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFavoriteMoviesLoader.swift; sourceTree = "<group>"; };
+		63B5233D2B0FF0D500A7E359 /* FirebaseUserAvatarImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserAvatarImageStore.swift; sourceTree = "<group>"; };
+		63B5233F2B10D77A00A7E359 /* SignUpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpError.swift; sourceTree = "<group>"; };
+		63B523412B10DA8100A7E359 /* SignInError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInError.swift; sourceTree = "<group>"; };
+		63F269E12B0E3E5F0092FADD /* MovieImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieImageLoader.swift; sourceTree = "<group>"; };
+		63F269E32B0F4E540092FADD /* UIViewController+init+className.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+init+className.swift"; sourceTree = "<group>"; };
+		63F269E52B0F60BC0092FADD /* TextField+highlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+highlight.swift"; sourceTree = "<group>"; };
+		63F269E72B0F615D0092FADD /* UIImage+systemName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+systemName.swift"; sourceTree = "<group>"; };
+		63F269E92B0F9F110092FADD /* FireBaseSignUpAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseSignUpAuthenticator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6332EF642B0766DA009833DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6332EFCC2B09328D009833DA /* FirebaseDatabaseSwift in Frameworks */,
+				6332EFCA2B09328D009833DA /* FirebaseDatabase in Frameworks */,
+				6332EFC62B09328D009833DA /* FirebaseAnalyticsSwift in Frameworks */,
+				6332EFD22B09328E009833DA /* FirebaseFirestoreSwift in Frameworks */,
+				6332EFD02B09328D009833DA /* FirebaseFirestoreCombine-Community in Frameworks */,
+				6332EFD42B09328E009833DA /* FirebaseStorage in Frameworks */,
+				6332EFCE2B09328D009833DA /* FirebaseFirestore in Frameworks */,
+				6332EFD62B09328E009833DA /* FirebaseStorageCombine-Community in Frameworks */,
+				6332EFC82B09328D009833DA /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6332EF5E2B0766DA009833DA = {
+			isa = PBXGroup;
+			children = (
+				6332EF692B0766DA009833DA /* MoviesApp */,
+				6332EF682B0766DA009833DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6332EF682B0766DA009833DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6332EF672B0766DA009833DA /* MoviesApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6332EF692B0766DA009833DA /* MoviesApp */ = {
+			isa = PBXGroup;
+			children = (
+				63B5233A2B0FE93E00A7E359 /* Shared */,
+				6332EF992B076C46009833DA /* Extensions */,
+				6332EF7F2B076ABA009833DA /* Main */,
+				6332EFBB2B090B31009833DA /* Coordinators */,
+				6332EF802B076B33009833DA /* Screens */,
+				6332EF7E2B076A98009833DA /* SupportingFiles */,
+				6332EF782B0766DB009833DA /* Info.plist */,
+				6332EFC22B0930BA009833DA /* GoogleService-Info.plist */,
+			);
+			path = MoviesApp;
+			sourceTree = "<group>";
+		};
+		6332EF7E2B076A98009833DA /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6332EF752B0766DB009833DA /* LaunchScreen.storyboard */,
+				6332EF732B0766DB009833DA /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		6332EF7F2B076ABA009833DA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6332EF6A2B0766DA009833DA /* AppDelegate.swift */,
+				6332EF6C2B0766DA009833DA /* SceneDelegate.swift */,
+				6332EFAC2B07991F009833DA /* MainTabBarViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6332EF802B076B33009833DA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6332EF812B076B53009833DA /* SignIn */,
+				6332EF952B076C03009833DA /* SignUp */,
+				6332EF912B076BDE009833DA /* MovieList */,
+				6332EF8D2B076BBF009833DA /* MovieDetails */,
+				6332EF892B076B9B009833DA /* Favorites */,
+				6332EF852B076B7B009833DA /* UserProfile */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6332EF812B076B53009833DA /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				6332EF842B076B6B009833DA /* Auth */,
+				6332EF822B076B5B009833DA /* Controllers */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		6332EF822B076B5B009833DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6332EFB72B08F18D009833DA /* SignInViewController.swift */,
+				6332EFB82B08F18D009833DA /* SignInViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6332EF842B076B6B009833DA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				6332EFE42B0BD742009833DA /* FireBaseSignInAuthenticator.swift */,
+				63B523412B10DA8100A7E359 /* SignInError.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		6332EF852B076B7B009833DA /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				6332EF882B076B93009833DA /* Stores */,
+				6332EF862B076B84009833DA /* Controllers */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		6332EF862B076B84009833DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6332EFB22B079D39009833DA /* UserProfileViewController.swift */,
+				6332EFB32B079D39009833DA /* UserProfileViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6332EF882B076B93009833DA /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				63B5233D2B0FF0D500A7E359 /* FirebaseUserAvatarImageStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		6332EF892B076B9B009833DA /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				6332EF8C2B076BB5009833DA /* Loaders */,
+				6332EF8B2B076BAB009833DA /* Views */,
+				6332EF8A2B076BA3009833DA /* Controllers */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		6332EF8A2B076BA3009833DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6332EFAE2B079CC2009833DA /* FavoriteMovieListViewController.swift */,
+				6332EFAF2B079CC2009833DA /* FavoriteMovieListViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6332EF8B2B076BAB009833DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6332EF8C2B076BB5009833DA /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				63B5233B2B0FEA9E00A7E359 /* FirebaseFavoriteMoviesLoader.swift */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		6332EF8D2B076BBF009833DA /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				6332EF8E2B076BC9009833DA /* Controllers */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		6332EF8E2B076BC9009833DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6332EFA82B079040009833DA /* MovieDetailsViewController.swift */,
+				6332EFA92B079040009833DA /* MovieDetailsViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6332EF902B076BD4009833DA /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				63F269E12B0E3E5F0092FADD /* MovieImageLoader.swift */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		6332EF912B076BDE009833DA /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				6332EFD72B0A2B4F009833DA /* ITunes API */,
+				63B523302B0FE33800A7E359 /* Loaders */,
+				6332EF942B076BF8009833DA /* Models */,
+				6332EF932B076BF3009833DA /* Views */,
+				6332EF922B076BE6009833DA /* Controllers */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		6332EF922B076BE6009833DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6332EF9E2B076D9A009833DA /* MovieListViewController.swift */,
+				6332EF9F2B076D9A009833DA /* MovieListViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6332EF932B076BF3009833DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6332EFA42B07705D009833DA /* MovieCell.swift */,
+				6332EFA52B07705D009833DA /* MovieCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6332EF942B076BF8009833DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6332EFA22B076FD9009833DA /* Movie.swift */,
+				6332EFDC2B0A3E36009833DA /* ItunesResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6332EF952B076C03009833DA /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				6332EF982B076C25009833DA /* Auth */,
+				6332EF962B076C11009833DA /* Controllers */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		6332EF962B076C11009833DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6332EFBE2B090DF6009833DA /* SignUpViewController.swift */,
+				6332EFBF2B090DF6009833DA /* SignUpViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6332EF982B076C25009833DA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				63F269E92B0F9F110092FADD /* FireBaseSignUpAuthenticator.swift */,
+				63B5233F2B10D77A00A7E359 /* SignUpError.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		6332EF992B076C46009833DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6332EF9A2B076C97009833DA /* TableView+register.swift */,
+				6332EF9C2B076CFC009833DA /* TableView+reusingCell.swift */,
+				63F269E32B0F4E540092FADD /* UIViewController+init+className.swift */,
+				63F269E52B0F60BC0092FADD /* TextField+highlight.swift */,
+				63F269E72B0F615D0092FADD /* UIImage+systemName.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6332EFBB2B090B31009833DA /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				6332EFBC2B090BD4009833DA /* AuthCoordinator.swift */,
+				6332EFDE2B0BD3EB009833DA /* MovieCoordinator.swift */,
+				6332EFE02B0BD440009833DA /* FavoriteMoviesCoordinator.swift */,
+				6332EFE22B0BD478009833DA /* UserProfileCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		6332EFD72B0A2B4F009833DA /* ITunes API */ = {
+			isa = PBXGroup;
+			children = (
+				6332EFD82B0A2B62009833DA /* AppleiTunesSearchURLComponents.swift */,
+				63B523332B0FE43D00A7E359 /* MovieMediaType.swift */,
+				63B523352B0FE46500A7E359 /* MediaType.swift */,
+			);
+			path = "ITunes API";
+			sourceTree = "<group>";
+		};
+		63B523302B0FE33800A7E359 /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				63B523312B0FE36800A7E359 /* ITunesMovieLoader.swift */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		63B523372B0FE60700A7E359 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				6332EFE62B0BD94A009833DA /* FavoriteMoviesFireBaseStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		63B5233A2B0FE93E00A7E359 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6332EF902B076BD4009833DA /* Loaders */,
+				63B523372B0FE60700A7E359 /* Stores */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6332EF662B0766DA009833DA /* MoviesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6332EF7B2B0766DB009833DA /* Build configuration list for PBXNativeTarget "MoviesApp" */;
+			buildPhases = (
+				6332EF632B0766DA009833DA /* Sources */,
+				6332EF642B0766DA009833DA /* Frameworks */,
+				6332EF652B0766DA009833DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoviesApp;
+			packageProductDependencies = (
+				6332EFC52B09328D009833DA /* FirebaseAnalyticsSwift */,
+				6332EFC72B09328D009833DA /* FirebaseAuth */,
+				6332EFC92B09328D009833DA /* FirebaseDatabase */,
+				6332EFCB2B09328D009833DA /* FirebaseDatabaseSwift */,
+				6332EFCD2B09328D009833DA /* FirebaseFirestore */,
+				6332EFCF2B09328D009833DA /* FirebaseFirestoreCombine-Community */,
+				6332EFD12B09328E009833DA /* FirebaseFirestoreSwift */,
+				6332EFD32B09328E009833DA /* FirebaseStorage */,
+				6332EFD52B09328E009833DA /* FirebaseStorageCombine-Community */,
+			);
+			productName = MoviesApp;
+			productReference = 6332EF672B0766DA009833DA /* MoviesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6332EF5F2B0766DA009833DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6332EF662B0766DA009833DA = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 6332EF622B0766DA009833DA /* Build configuration list for PBXProject "MoviesApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6332EF5E2B0766DA009833DA;
+			packageReferences = (
+				6332EFC42B09328D009833DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 6332EF682B0766DA009833DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6332EF662B0766DA009833DA /* MoviesApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6332EF652B0766DA009833DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6332EFBA2B08F18D009833DA /* SignInViewController.xib in Resources */,
+				6332EFA12B076D9A009833DA /* MovieListViewController.xib in Resources */,
+				6332EF772B0766DB009833DA /* LaunchScreen.storyboard in Resources */,
+				6332EFA72B07705D009833DA /* MovieCell.xib in Resources */,
+				6332EFC12B090DF6009833DA /* SignUpViewController.xib in Resources */,
+				6332EF742B0766DB009833DA /* Assets.xcassets in Resources */,
+				6332EFB12B079CC2009833DA /* FavoriteMovieListViewController.xib in Resources */,
+				6332EFC32B0930BA009833DA /* GoogleService-Info.plist in Resources */,
+				6332EFAB2B079040009833DA /* MovieDetailsViewController.xib in Resources */,
+				6332EFB52B079D39009833DA /* UserProfileViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6332EF632B0766DA009833DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6332EFA32B076FD9009833DA /* Movie.swift in Sources */,
+				6332EFE12B0BD440009833DA /* FavoriteMoviesCoordinator.swift in Sources */,
+				63B523402B10D77A00A7E359 /* SignUpError.swift in Sources */,
+				6332EFB42B079D39009833DA /* UserProfileViewController.swift in Sources */,
+				6332EFAA2B079040009833DA /* MovieDetailsViewController.swift in Sources */,
+				63F269E82B0F615D0092FADD /* UIImage+systemName.swift in Sources */,
+				6332EFE32B0BD478009833DA /* UserProfileCoordinator.swift in Sources */,
+				6332EFA62B07705D009833DA /* MovieCell.swift in Sources */,
+				63B523362B0FE46500A7E359 /* MediaType.swift in Sources */,
+				6332EF6B2B0766DA009833DA /* AppDelegate.swift in Sources */,
+				63F269E62B0F60BC0092FADD /* TextField+highlight.swift in Sources */,
+				6332EFAD2B07991F009833DA /* MainTabBarViewController.swift in Sources */,
+				6332EFB02B079CC2009833DA /* FavoriteMovieListViewController.swift in Sources */,
+				6332EFD92B0A2B62009833DA /* AppleiTunesSearchURLComponents.swift in Sources */,
+				6332EF9D2B076CFC009833DA /* TableView+reusingCell.swift in Sources */,
+				63B5233C2B0FEA9E00A7E359 /* FirebaseFavoriteMoviesLoader.swift in Sources */,
+				63B523422B10DA8100A7E359 /* SignInError.swift in Sources */,
+				63B523342B0FE43D00A7E359 /* MovieMediaType.swift in Sources */,
+				63B523322B0FE36800A7E359 /* ITunesMovieLoader.swift in Sources */,
+				6332EFC02B090DF6009833DA /* SignUpViewController.swift in Sources */,
+				6332EFDD2B0A3E36009833DA /* ItunesResult.swift in Sources */,
+				63B5233E2B0FF0D500A7E359 /* FirebaseUserAvatarImageStore.swift in Sources */,
+				63F269E42B0F4E540092FADD /* UIViewController+init+className.swift in Sources */,
+				6332EFA02B076D9A009833DA /* MovieListViewController.swift in Sources */,
+				6332EF9B2B076C97009833DA /* TableView+register.swift in Sources */,
+				6332EFBD2B090BD4009833DA /* AuthCoordinator.swift in Sources */,
+				6332EFDF2B0BD3EB009833DA /* MovieCoordinator.swift in Sources */,
+				6332EFE52B0BD742009833DA /* FireBaseSignInAuthenticator.swift in Sources */,
+				63F269E22B0E3E5F0092FADD /* MovieImageLoader.swift in Sources */,
+				63F269EA2B0F9F110092FADD /* FireBaseSignUpAuthenticator.swift in Sources */,
+				6332EFB92B08F18D009833DA /* SignInViewController.swift in Sources */,
+				6332EFE72B0BD94A009833DA /* FavoriteMoviesFireBaseStore.swift in Sources */,
+				6332EF6D2B0766DA009833DA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6332EF752B0766DB009833DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6332EF762B0766DB009833DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6332EF792B0766DB009833DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6332EF7A2B0766DB009833DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6332EF7C2B0766DB009833DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CW43T79V3J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoviesApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow acces";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MoviesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6332EF7D2B0766DB009833DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CW43T79V3J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoviesApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow acces";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MoviesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6332EF622B0766DA009833DA /* Build configuration list for PBXProject "MoviesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6332EF792B0766DB009833DA /* Debug */,
+				6332EF7A2B0766DB009833DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6332EF7B2B0766DB009833DA /* Build configuration list for PBXNativeTarget "MoviesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6332EF7C2B0766DB009833DA /* Debug */,
+				6332EF7D2B0766DB009833DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6332EFC42B09328D009833DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6332EFC52B09328D009833DA /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6332EFC42B09328D009833DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		6332EFC72B09328D009833DA /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6332EFC42B09328D009833DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6332EFC92B09328D009833DA /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6332EFC42B09328D009833DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		6332EFCB2B09328D009833DA /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6332EFC42B09328D009833DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		6332EFCD2B09328D009833DA /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6332EFC42B09328D009833DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6332EFCF2B09328D009833DA /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6332EFC42B09328D009833DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		6332EFD12B09328E009833DA /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6332EFC42B09328D009833DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		6332EFD32B09328E009833DA /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6332EFC42B09328D009833DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		6332EFD52B09328E009833DA /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6332EFC42B09328D009833DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6332EF5F2B0766DA009833DA /* Project object */;
+}
