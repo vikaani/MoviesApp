@@ -15,10 +15,10 @@ class SignInViewController: UIViewController {
     var onCompleteSignIn: (() -> Void)?
     var onTapSignUpButton: (() -> Void)?
     
-    private let signInAutenticator: FireBaseSignInAuthenticator
+    private let signInAuthenticator: FireBaseSignInAuthenticator
     
-    init(signInAutenticator: FireBaseSignInAuthenticator) {
-        self.signInAutenticator = signInAutenticator
+    init(signInAuthenticator: FireBaseSignInAuthenticator) {
+        self.signInAuthenticator = signInAuthenticator
         super.init(nibName: SignInViewController.className, bundle: nil)
     }
     
@@ -39,7 +39,7 @@ class SignInViewController: UIViewController {
               let password = passwordTextField.text
         else { return }
         
-        signInAutenticator.signIn(email: email, password: password) { [weak self] result in
+        signInAuthenticator.signIn(email: email, password: password) { [weak self] result in
             switch result {
             case .success(_):
                 self?.onCompleteSignIn?()
