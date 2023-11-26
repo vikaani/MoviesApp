@@ -42,8 +42,7 @@ class ITunesMovieLoader {
     }
 }
 
-
-extension String {
+fileprivate extension String {
     func extractYear() -> Int? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
