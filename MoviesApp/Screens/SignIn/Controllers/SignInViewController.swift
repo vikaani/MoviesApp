@@ -69,7 +69,7 @@ class SignInViewController: UIViewController {
 
 extension SignInViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        passwordTextField.resignFirstResponder()
+        textField.resignFirstResponder()
         return true
     }
     
