@@ -25,7 +25,7 @@ class ITunesMovieLoader {
                 completionHandler(.failure(error!))
                 return }
             
-            let itunesResult = try! JSONDecoder().decode(ItunesResult.self, from: data)
+            guard let itunesResult = try? JSONDecoder().decode(ItunesResult.self, from: data) else { return }
             
             let movies = itunesResult.results.map { itunesMovie in
                 Movie(id: "\(itunesMovie.trackId)",
