@@ -12,7 +12,7 @@ class SignInViewController: UIViewController {
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    var onTapLoginButton: (() -> Void)?
+    var onCompleteSignIn: (() -> Void)?
     var onTapSignUpButton: (() -> Void)?
     
     private let signInAutenticator: FireBaseSignInAuthenticator
@@ -42,7 +42,7 @@ class SignInViewController: UIViewController {
         signInAutenticator.signIn(email: email, password: password) { [weak self] result in
             switch result {
             case .success(_):
-                self?.onTapLoginButton?()
+                self?.onCompleteSignIn?()
             case .failure(let failure):
                 
                 switch failure {

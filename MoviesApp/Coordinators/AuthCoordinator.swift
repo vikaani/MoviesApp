@@ -32,7 +32,7 @@ class AuthCoordinator: Coordinator {
         let signInAutenticator = FireBaseSignInAuthenticator()
         let signInViewController = SignInViewController(signInAutenticator: signInAutenticator)
         signInViewController.onTapSignUpButton = openSignUpScreen
-        signInViewController.onTapLoginButton = onFinish
+        signInViewController.onCompleteSignIn = onFinish
         navigationController.pushViewController(signInViewController, animated: true)
     }
     
