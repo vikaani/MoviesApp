@@ -9,6 +9,7 @@ import Foundation
 
 class ITunesMovieLoader {
     typealias MovieResult = (Result<[Movie],Error>) -> Void
+    
     func load(term: String, completionHandler: @escaping MovieResult) {
         let components = AppleiTunesSearchURLComponents<MovieMediaType>(
             term: term,
@@ -19,6 +20,7 @@ class ITunesMovieLoader {
         guard let url = components.url else { return }
         
         let urlRequest = URLRequest(url: url)
+        
         URLSession.shared.dataTask(with: urlRequest) {  data, response, error in
             
             guard let data = data else {
